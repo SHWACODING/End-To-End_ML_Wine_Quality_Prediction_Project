@@ -70,21 +70,21 @@ Now open up your local host 0.0.0.0:8080
 
 ## 3. Create ECR repo to store/save docker image
 
-- Save the URI: 136566696263.dkr.ecr.us-east-1.amazonaws.com/mlproject
+- Save the URI: 047719640457.dkr.ecr.us-east-1.amazonaws.com/mlproject
 
 ## 4. Create EC2 machine (Ubuntu)
 
 ## 5. Open EC2 and Install docker in EC2 Machine
 
-### optinal
+### Run the following commands in EC2 ->
 
  sudo apt-get update -y
 
  sudo apt-get upgrade
 
- #required
+### Required commands to install docker in EC2 ->
 
- curl -fsSL <https://get.docker.com> -o get-docker.sh
+ curl -fsSL https://get.docker.com -o get-docker.sh
 
  sudo sh get-docker.sh
 
@@ -98,14 +98,14 @@ setting>actions>runner>new self hosted runner> choose os> then run command one b
 
 ## 7. Setup github secrets
 
-    AWS_ACCESS_KEY_ID=
+    AWS_ACCESS_KEY_ID = From>> mlproject_accesskey.csv
 
-    AWS_SECRET_ACCESS_KEY=
+    AWS_SECRET_ACCESS_KEY = From>> mlprojetc.pem
 
     AWS_REGION = us-east-1
 
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+    AWS_ECR_LOGIN_URI = demo>>  047719640457.dkr.ecr.us-east-1.amazonaws.com
 
-    ECR_REPOSITORY_NAME = simple-app
+    ECR_REPOSITORY_NAME = mlproject
 
  git config --global user.name "ShwaTech"
