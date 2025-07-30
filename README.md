@@ -70,7 +70,7 @@ Now open up your local host 0.0.0.0:8080
 
 ## 3. Create ECR repo to store/save docker image
 
-- Save the URI: 047719640457.dkr.ecr.us-east-1.amazonaws.com/mlproject
+- Save the URI: 047719640457.dkr.ecr.us-east-1.amazonaws.com/wine_prediction
 
 ## 4. Create EC2 machine (Ubuntu)
 
@@ -98,14 +98,14 @@ setting>actions>runner>new self hosted runner> choose os> then run command one b
 
 ## 7. Setup github secrets
 
-    AWS_ACCESS_KEY_ID = From>> mlproject_accesskey.csv
+    AWS_ACCESS_KEY_ID = From>> wine_prediction_accesskey.csv
 
-    AWS_SECRET_ACCESS_KEY = From>> mlprojetc.pem
+    AWS_SECRET_ACCESS_KEY = From>> wine_prediction.pem
 
     AWS_REGION = us-east-1
 
     AWS_ECR_LOGIN_URI = demo>>  047719640457.dkr.ecr.us-east-1.amazonaws.com
 
-    ECR_REPOSITORY_NAME = mlproject
+    ECR_REPOSITORY_NAME = wine_prediction
 
  git config --global user.name "ShwaTech"
